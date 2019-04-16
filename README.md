@@ -7,16 +7,21 @@
 	$ cd Anime-check-new-series
 ```
 > Step 2:
+>-Install dependencies
+```sh
+	$ pip install -r requirements.txt
+```
+> Step 3:
 >- Run app/main.py
 ```sh
 	$ python3 app/main.py
 ```
-> Step 3:
+> Step 4:
 >- Add to urls.txt any urls (sites: anilibria or anidub)
 ```sh
 	$ echo "url" > app/urls.txt
 ```
-> Step 4:
+> Step 5:
 >- Run again app/main.py
 ```sh
 	$ python3 app/main.py
