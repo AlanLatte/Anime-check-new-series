@@ -1,4 +1,3 @@
----
 # How use:
 > Step 1:
 >- Clone repo
@@ -12,7 +11,7 @@
 	$ pip install -r requirements.txt
 ```
 > Step 3:
->- Run app/main.py
+>-Run app/main.py
 ```sh
 	$ python3 app/main.py
 ```
