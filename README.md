@@ -22,4 +22,4 @@
 	$ python3 app/main.py
 ```
 ___
-__@Created by__ [AlanLatte]("https://t.me/AlanLatte/")
+__@Created by__ [AlanLatte](https://t.me/AlanLatte/)
