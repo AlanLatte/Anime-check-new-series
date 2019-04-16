@@ -34,10 +34,10 @@ def parser(urls: tuple, headers: dict):
         information:
             index for notify the user of any error
     """
+
     result = str()
 
-
-    """Start logic of parser"""
+    """Start logic of parser """
 
     for index, url in enumerate(urls,1):
         request = requests.get(url, headers=headers)
@@ -61,7 +61,6 @@ def parser(urls: tuple, headers: dict):
                 result+= f'{index} > {title} <\n'
 
             else:
-
                 data = error_message
                 result+= f'{index} > {data} <\n'
         else:
@@ -83,6 +82,7 @@ def check_data(data, DB_result, url):
             new_data    —   tuple
             result      —   list
             index       —   int
+            check_mark  —   unicode string
     """
     old_data = get_file_data(DB_filename = DB_result, mode='r')
     Record.clear_data(file=DB_result, mode='w')
@@ -92,7 +92,8 @@ def check_data(data, DB_result, url):
         result=list(set(new_data) - set(old_data))
         for i in range(len(result)):
             index = result[i][0]
-            print(f'New series of {result[i]} available.')
+            check_mark = u'\u2713'
+            print(f'{result[i]} available.[{check_mark}]')
             webbrowser.open(str(url[int(index)-1]))
     else:
         print('New series didn`t come out :c')
