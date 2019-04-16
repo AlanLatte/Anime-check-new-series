@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import os,requests, re, webbrowser
 from bs4 import BeautifulSoup
+from time import sleep
 
 """ Change directory to current """
 os.chdir(os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__))))
@@ -133,3 +134,4 @@ if __name__ == '__main__':
         check_data(data, DB_result, url=urls)
     else:
         print(f'Paste in {DB_urls} any urls')
+    sleep(3)
