@@ -6,12 +6,12 @@
 	$ cd Anime-check-new-series
 ```
 > Step 2:
->-Install dependencies
+>- Install dependencies
 ```sh
 	$ pip install -r requirements.txt
 ```
 > Step 3:
->-Run app/main.py
+>- Run app/main.py
 ```sh
 	$ python3 app/main.py
 ```
