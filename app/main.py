@@ -1,10 +1,27 @@
 # -*- coding: utf-8 -*-
-import os,requests, re, webbrowser
+
+import os
+""" Change directory to current """
+os.chdir(os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__))))
+
+"""
+    Start main code.
+    # TODO:
+        Создать расширение для браузера.
+        Включить flask HTML оболочку для закидывания ссылок.
+        Включить проверку для ссылок
+        (на наличие патерном "anilibria.tv" || "anime.anidub.com")
+        Добавить парсинг "http://ani-dub.ru/".
+        Добавить многопоточность.
+
+        Подключить БД.
+        Поднять сайт с оф.документацией.
+"""
+import requests, re, webbrowser
 from bs4 import BeautifulSoup
 from time import sleep
 
-""" Change directory to current """
-os.chdir(os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__))))
+
 
 def get_file_data(DB_filename: str, mode='r'):
     """
